@@ -24,7 +24,7 @@ ClassMethod CSVExport(filepath As %String, classname As %String, Delimiter As %S
 	Set mgr.Delimiter = Delimiter
 	Set mgr.StringQuote = """"
 	// 入力データの日付フォーマットを指定します
-	Set mgr.DateFormat = 1   //YYYY-MM-DDの場合は3 YYYYMMDDの場合は8 YYYY年MM月DD日は16を指定します
+	Set mgr.DateFormat = 3   //YYYY-MM-DDの場合は3 YYYYMMDDの場合は8
 	Set mgr.TimeFormat = 1 // hh:mm:ss
 	// Set mgr.TimeStampFormat = 1 // ODBC format (Import only)
 	Set mgr.NoCheck = 1 // disable validation (Import only)
