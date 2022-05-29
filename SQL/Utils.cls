@@ -155,7 +155,7 @@ ClassMethod CountRows(filepath) As %Integer
 {
 	set rows=0
 	
- 	Set stream=##class(%FileCharacterStream).%New() 
+ 	Set stream=##class(%Stream.FileCharacter).%New() 
  	Set stream.Filename=filepath
  	do stream.LineTerminatorSet($C(10))
  	While 'stream.AtEnd 
